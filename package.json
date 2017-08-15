@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.15.4",
     "mustache": "^2.3.0",
-    "mustache-express": "^1.2.4"
+    "mustache-express": "^1.2.5"
   },
   "devDependencies": {},
   "private": true

@@ -14,5 +14,5 @@ app.get('/todo/', function (req, res) {
 })
 
 app.listen(3000, function () {
-  console.log('Successfully started express application!');
+  console.log('Successfully started express application on port 3000!');
 })
