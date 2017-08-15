@@ -5,16 +5,16 @@ const mustacheExpress = require('mustache-express');
 const app = express();
 
 let todos = {todos: [
-  {name: 'Learn Node basics', completed: true},
-  {name: 'Learn Express basics', completed: true},
-  {name: 'Learn Mustache', completed: true},
-  {name: 'Learn HTML forms with Express', completed: false},
-  {name: 'Learn about authentication', completed: false},
-  {name: 'Learn how to connect to PostgreSQL', completed: false},
-  {name: 'Learn how to create databases', completed: false},
-  {name: 'Learn SQL', completed: false},
-  {name: 'Learn how to connect to PostgreSQL from node', completed: false},
-  {name: 'Learn how to use Sequelize', completed: false},
+  {name: 'Learn Node basics', completed: 'checked'},
+  {name: 'Learn Express basics', completed: 'checked'},
+  {name: 'Learn Mustache', completed: 'checked'},
+  {name: 'Learn HTML forms with Express', completed: ''},
+  {name: 'Learn about authentication', completed: ''},
+  {name: 'Learn how to connect to PostgreSQL', completed: ''},
+  {name: 'Learn how to create databases', completed: ''},
+  {name: 'Learn SQL', completed: ''},
+  {name: 'Learn how to connect to PostgreSQL from node', completed: ''},
+  {name: 'Learn how to use Sequelize', completed: ''},
 ]}
 
 app.engine('mustache', mustacheExpress());
