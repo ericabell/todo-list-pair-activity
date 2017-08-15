@@ -28,13 +28,13 @@
         <div class="col-xs-12">
           <!-- TODO write your HTML/Mustache here -->
           <h1>Todo</h1>
-          <p>{{test}}</p>
-          <p>{{test2}}</p>
 
           {{#todos}}
-            <p>{{name}}</p>
+            <div class="checkbox"><label><input type="checkbox">{{name}}
+            </label>
+          </div>
           {{/todos}}
-          
+
         </div>
       </div>
     </div>
