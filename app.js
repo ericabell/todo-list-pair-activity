@@ -4,13 +4,13 @@ const mustacheExpress = require('mustache-express');
 
 const app = express();
 
-let todos = [
-  {name: 'todo1', completed: true},
-  {name: 'todo2', completed: true},
-  {name: 'todo3', completed: true},
-  {name: 'todo4', completed: false},
-  {name: 'todo5', completed: false},
-]
+let todos = {list: [
+  {name: 'Learn Node basics', completed: true},
+  {name: 'Learn Express basics', completed: true},
+  {name: 'Learn Mustache', completed: true},
+  {name: 'Learn HTML forms with Express', completed: false},
+  {name: 'Learn about authentication', completed: false}
+]}
 
 app.engine('mustache', mustacheExpress());
 app.set('views', './views')
@@ -19,7 +19,7 @@ app.set('view engine', 'mustache')
 //Listening on root
 app.get('/todo/', function (req, res) {
   // TODO write your code here
-  res.render('todo');
+  res.render('todo', {test: 'this is a test'});
 })
 
 app.listen(3000, function () {
