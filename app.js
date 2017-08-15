@@ -19,7 +19,7 @@ app.set('view engine', 'mustache')
 //Listening on root
 app.get('/todo/', function (req, res) {
   // TODO write your code here
-  res.send('Hello world!');
+  res.render('todo');
 })
 
 app.listen(3000, function () {
