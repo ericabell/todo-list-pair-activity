@@ -1,11 +1,9 @@
 {
-  "name": "todo-list-pair-activity",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "express": "^4.15.3",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {},
+  "private": true
 }
